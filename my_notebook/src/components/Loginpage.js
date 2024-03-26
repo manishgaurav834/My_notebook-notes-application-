@@ -84,7 +84,7 @@ const Loginpage = () => {
           <div className="font-bold text-2xl  hidden sm:flex justify-center w-full">Don't have an account?....create one now</div>
           <div className="font-bold text-xl flex sm:hidden justify-center"><p>Don't have an account?</p></div>
           
-          <Link to="/signup" className=" my-3 h-12  w-full sm:w-1/3 sm:mx-2 flex items-center md:text-xl lg:text-2xl justify-center font-bold bg-indigo-500 border-black border-2 text-white rounded-xl">Sign-up</Link>
+          <Link to="/signup" className="hover:opacity-95 hover:scale-105 my-3 h-12  w-full sm:w-1/3 sm:mx-2 flex items-center md:text-xl lg:text-2xl justify-center font-bold bg-indigo-500 border-black border-2 text-white rounded-xl">Sign-up</Link>
 
         </div>
 

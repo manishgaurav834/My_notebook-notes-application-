@@ -36,7 +36,7 @@ function Home() {
     , []);
   return (
     <>
-      <div className={`absolute top-16 py-8 w-full h-screen bg-gradient-to-t from-violet-400 to-indigo-100`}>
+      <div className={`absolute top-16 py-8 w-full  bg-gradient-to-t from-violet-400 to-indigo-100`}>
         <div className={`container mx-auto flex flex-col items-center  `}>
         
         <div className={`w-2/3 ${(show.bool)?'opacity-30':''}`}><AddNote/></div>

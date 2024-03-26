@@ -1,6 +1,7 @@
 import React,{useContext,useState} from 'react';
 import AuthContext from '../context/authContext';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Signin = () => {
     const context= useContext(AuthContext)
@@ -56,8 +57,9 @@ const Signin = () => {
           <label className="font-bold text-lg md:text-xl my-4" htmlFor="password">Password</label><br/>
           <input type="text" id="password" name="password" className="active:bg-slate-400 p-2 h-10 rounded-xl w-full border-2 border-black my-4" onChange={onChange} value={cred.password} required minLength={5} /><br/>
           <div className='flex gap-x-6'>
-         <div className="flex w-full justify-center">
-         <input type="submit" value="Create" className="bg-indigo-600 hover:opacity-95 hover:scale-105 text-white text-sm md:text-xl lg:text-2xl font-bold rounded-xl w-full sm:w-2/5 border-2 border-black   h-12 my-4 cursor-pointer"></input>
+         <div className="flex w-full justify-center items-center">
+         <input type="submit" value="Create" className="bg-indigo-600 hover:opacity-95 hover:scale-105 text-white text-sm md:text-xl lg:text-2xl font-bold rounded-xl w-full sm:w-2/5 border-2 mx-2 border-black   h-12 my-4 cursor-pointer"></input>
+         <Link to="/login" className="hover:opacity-95 hover:scale-105 my-3 h-12  w-full sm:w-1/3 sm:mx-2 flex items-center md:text-xl lg:text-2xl justify-center font-bold bg-red-500 border-black border-2 text-white rounded-xl">Have an Account</Link>
          </div>
           </div>
         
